@@ -7,12 +7,11 @@
 
 # Site settings
 title: Ramblings of an english fool
-email: englishfool@englishfool.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   This is a place where I talk about things & stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://englishfool.co.uk" # the base hostname & protocol for your site
-twitter_username: englishfool
+twitter_username: AnEnglishFool
 permalink: "/:title"
 
 # Build settings
