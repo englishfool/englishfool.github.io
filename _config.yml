@@ -1,11 +1,5 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# User Settings | Edit these according to your site
 
-# Site settings
 title: Ramblings of an english fool
 description: > # this means to ignore newlines until "baseurl:"
   This is a place where I talk about things & stuff.
@@ -14,5 +8,44 @@ url: "http://englishfool.co.uk" # the base hostname & protocol for your site
 twitter_username: AnEnglishFool
 permalink: "/:title"
 
-# Build settings
+url: "http://englishfool.co.uk" # the base hostname & protocol for your site
+
+permalink:          /:year/:title
+
+paginate: 4
+paginate_path: "/page/:num"
+comments: true
+
+heading_font: Lobster 
+about_footer: true
+short_bio: >
+    A day without laughter is a day wasted.
+profile_picture: http://img3.rnkr-static.com/list_img/11570/111570/C300/movies-and-films-directed-by-charlie-chaplin-u4.jpg
+
+google_analytics: false
+tracking_id: # Your google analytics tracking id
+
+# Build settings | Do not edit anything below this
 markdown: kramdown
+
+gems:
+  - jekyll-paginate
+
+sass:
+  style:            compressed
+  sass_dir:         _sass
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
